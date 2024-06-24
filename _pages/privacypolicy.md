@@ -7,7 +7,7 @@ include_in_header: false
 **Last updated**  
 June 24 2024
 
-  ##Privacy Policy
+  # Privacy Policy
 
 <p>Last updated: June 24, 2024</p>
 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
