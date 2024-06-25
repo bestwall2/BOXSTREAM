@@ -1,47 +1,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-{% for file in site.static_files %}
-    {% if file.path contains 'assets/screenshot/' %}
+{% assign phonePaths = site.static_files | where: "path", "assets/screenshot/" %}
+{% for file in phonePaths %}
+    {% if forloop.index <= 3 %} {# Limit to three phones #}
         <script>
             $(function() {
-                $(".iphoneScreen").attr('src', '{{ site.github.baseurl }}{{ file.path }}');
-                $(".iphoneScreen").removeClass("hidden");
+                $(".iphoneScreen").eq({{ forloop.index0 }}).attr('src', '{{ site.github.baseurl }}{{ file.path }}');
+                $(".iphoneScreen").eq({{ forloop.index0 }}).removeClass("hidden");
                 console.log("{{ file.path }}");
             });
         </script>
-    {% elsif file.path contains 'assets/videos/' %}
-        {% unless file.path contains 'assets/videos/Place-video-files-here.txt' %}
-            <script>
-                $(function() {
-                    $(".iphoneScreen").addClass("hidden");
-                    console.log("remove screenshot");
-                });
-            </script>
-        {% endunless %}
-        {% if file.extname == ".mov" or file.extname == ".mp4" %}
-            <script>
-                $(function() {
-                    $(".videoContainer").removeClass("hidden");
-                    $(".screenvideo").append('<source src="{{ site.github.baseurl }}{{ file.path }}" type="video/mp4">');
-                    console.log("{{ file.path }}");
-                });
-            </script>
-        {% elsif file.extname == ".ogg" %}
-            <script>
-                $(function() {
-                    $(".videoContainer").removeClass("hidden");
-                    $(".screenvideo").append('<source src="{{ site.github.baseurl }}{{ file.path }}" type="video/ogg">');
-                    console.log("{{ file.path }}");
-                });
-            </script>
-        {% elsif file.extname == ".webm" %}
-        <script>
-            $(function() {
-                $(".videoContainer").removeClass("hidden");
-                $(".screenvideo").append('<source src="{{ site.github.baseurl }}{{ file.path }}" type="video/webm">');
-                console.log("{{ file.path }}");
-            });
-        </script>
-        {% endif %}
     {% endif %}
 {% endfor %}
+
+{# Hide all other .iphoneScreen elements not used #}
+<script>
+    $(function() {
+        $(".iphoneScreen").slice(3).addClass("hidden");
+    });
+</script>
