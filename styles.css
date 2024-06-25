@@ -255,6 +255,7 @@ a {
   overflow-x: auto;
   white-space: nowrap;
   padding: 0; /* Remove top and bottom padding */
+  margin: 0; /* Remove any margin */
 }
 
 .app__screenshots-list {
@@ -288,9 +289,15 @@ a {
 @media (max-width: 768px) {
   .app__screenshots-wrapper {
     justify-content: flex-start; /* Align items to the start */
+    padding: 0 10px; /* Add padding for horizontal scroll */
   }
 
   .app__screenshot {
     width: 100px; /* Smaller width for mobile devices */
   }
+}
+
+.container-desktop {
+  margin: 0; /* Remove margin from the container */
+  padding: 0; /* Remove padding from the container */
 }
