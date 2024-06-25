@@ -230,4 +230,6 @@ a {
     height: 16px; /* Adjust as needed */
     margin-right: 8px; /* Adjust as needed */
     vertical-align: middle;
+    display: inline-block;
+    object-fit: contain;
 }
