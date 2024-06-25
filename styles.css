@@ -174,7 +174,9 @@ a {
 }
 
 .newBtn {
-    display: inline-block;
+    display: inline-flex; /* Use flexbox */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
     outline: 0;
     cursor: pointer;
     border: none;
@@ -200,7 +202,9 @@ a {
 }
 
 .newBtn2 {
-    display: inline-block;
+    display: inline-flex; /* Use flexbox */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
     outline: 0;
     cursor: pointer;
     border: none;
