@@ -2,41 +2,76 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-$body-color: {{ site.body_background_color }};
+$body-color: {{
+  site.body_background_color
+}};
+
 $header-image: "{{ site.cover_image }}";
 $device-color: "assets/{{ site.device_color }}.png";
 
-$accent-color: {{ site.link_color }};
-$header-title-color: {{ site.topbar_title_color }};
-$app-title-color: {{ site.app_title_color }};
-$app-price-color: {{ site.app_price_color }};
-$app-description-color: {{ site.app_description_color }};
+$accent-color: {{
+  site.link_color
+}};
 
-$feature-title-color: {{ site.feature_title_color }};
-$feature-text-color: {{ site.feature_text_color }};
-$footer-text-color: {{ site.footer_text_color }};
+$header-title-color: {{
+  site.topbar_title_color
+}};
+$app-title-color: {{
+  site.app_title_color
+}};
+$app-price-color: {{
+  site.app_price_color
+}};
+$app-description-color: {{
+  site.app_description_color
+}};
 
-$header_color: {{ site.topbar_color }};
-$header_transparency: {{ site.topbar_transparency }};
+$feature-title-color: {{
+  site.feature_title_color
+}};
+$feature-text-color: {{
+  site.feature_text_color
+}};
+$footer-text-color: {{
+  site.footer_text_color
+}};
 
-$image-overlay-color: {{ site.cover_overlay_color }};
-$image-overlay-transparency: {{ site.cover_overlay_transparency }};
+$header_color: {{
+  site.topbar_color
+}};
+$header_transparency: {{
+  site.topbar_transparency
+}};
 
-$feature-icons-foreground-color: {{ site.feature_icons_foreground_color }};
-$feature-icons-background-color: {{ site.feature_icons_background_color }};
+$image-overlay-color: {{
+  site.cover_overlay_color
+}};
+$image-overlay-transparency: {{
+  site.cover_overlay_transparency
+}};
 
-$social-icons-foreground-color: {{ site.social_icons_foreground_color }};
-$social-icons-background-color: {{ site.social_icons_background_color }};
+$feature-icons-foreground-color: {{
+  site.feature_icons_foreground_color
+}};
+$feature-icons-background-color: {{
+  site.feature_icons_background_color
+}};
 
+$social-icons-foreground-color: {{
+  site.social_icons_foreground_color
+}};
+$social-icons-background-color: {{
+  site.social_icons_background_color
+}};
 &__screenshots-list {
   display: grid;
-  grid-template-columns: repeat(6, 200px);
+  grid-template-columns: 200px 200px 200px 200px 200px 200px;
   grid-column-gap: 20px;
   padding: 30px 0;
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     padding: 32px;
+    width: 800px;
   }
 }
 
@@ -57,8 +92,7 @@ $social-icons-background-color: {{ site.social_icons_background_color }};
 &__screenshots-wrapper {
   overflow-y: auto;
 }
-
 @import
-  "base",
-  "layout",
-  "github-markdown";
+"base",
+"layout",
+"github-markdown"
