@@ -293,11 +293,11 @@ a {
   }
 
   .app__screenshot {
-    width: 100px; /* Smaller width for mobile devices */
+    width: 200px; /* Smaller width for mobile devices */
   }
 }
 
 .container-desktop {
-  margin: 0; /* Remove margin from the container */
+  margin: 20; /* Remove margin from the container */
   padding: 0; /* Remove padding from the container */
 }
