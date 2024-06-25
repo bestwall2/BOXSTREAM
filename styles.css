@@ -246,3 +246,41 @@ a {
     display: inline-block;
     object-fit: contain;
 }
+
+/* Front matter comment to ensure Jekyll properly reads file. */
+
+.app__screenshots-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+  padding: 30px 0;
+}
+
+.app__screenshots-wrapper {
+  overflow-y: auto;
+}
+
+.app__screenshot {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.app__screenshot:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.app__screenshot:not(:hover) {
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+/* Additional imports if needed */
+/* @import "base"; */
+/* @import "layout"; */
+/* @import "github-markdown"; */
