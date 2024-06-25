@@ -247,8 +247,6 @@ a {
     object-fit: contain;
 }
 
-/* Front matter comment to ensure Jekyll properly reads file. */
-
 .app__screenshots-wrapper {
   overflow-x: auto;
   white-space: nowrap;
@@ -262,7 +260,7 @@ a {
 
 .app__screenshot {
   width: 200px;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -278,6 +276,13 @@ a {
 
 .app__screenshot:not(:hover) {
   transition: transform 0.5s, box-shadow 0.5s;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .app__screenshot {
+    width: 100px; /* Smaller width for mobile devices */
+  }
 }
 
 /* Additional imports if needed */
