@@ -3,6 +3,7 @@ layout: page
 title: What's New
 include_in_header: true
 ---
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
 ### `Latest`
 # **Version 1.0**
