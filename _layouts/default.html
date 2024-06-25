@@ -83,14 +83,12 @@
             </p>
           </div>
           <div class="downloadButtonsContainer">
-            {% if site.playstore_link %}
-            <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
-            {% endif %}
-            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
-            <button>
-              Hold that
-            </button>
-
+            <a href="https://your-link.com" target="_blank">
+              <button>
+                <span class="bold-text">Download App</span><br>
+                <span>10.6MG</span>
+              </button>
+            </a>
           </div>
         </div>
         {% include features.html %}
