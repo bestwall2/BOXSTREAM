@@ -247,15 +247,21 @@ a {
     object-fit: contain;
 }
 
+/* Front matter comment to ensure Jekyll properly reads file. */
+
 .app__screenshots-wrapper {
+  display: flex;
+  justify-content: center; /* Center horizontally */
   overflow-x: auto;
   white-space: nowrap;
-  padding: 0px 0;
+  padding: 0; /* Remove top and bottom padding */
 }
 
 .app__screenshots-list {
   display: inline-flex;
   gap: 20px;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
 }
 
 .app__screenshot {
@@ -280,12 +286,11 @@ a {
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
+  .app__screenshots-wrapper {
+    justify-content: flex-start; /* Align items to the start */
+  }
+
   .app__screenshot {
     width: 100px; /* Smaller width for mobile devices */
   }
 }
-
-/* Additional imports if needed */
-/* @import "base"; */
-/* @import "layout"; */
-/* @import "github-markdown"; */
