@@ -1,5 +1,6 @@
 #page title
-page_title                                : BoxStream                                        # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title                                : BoxStream   
+# Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 screenshots:
   - yourscreenshot.png
   - yourscreenshot.png
