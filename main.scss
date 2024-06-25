@@ -63,7 +63,7 @@ $social-icons-foreground-color: {{
 $social-icons-background-color: {{
   site.social_icons_background_color
 }};
-&__screenshots-list {
+$__screenshots-list {
   display: grid;
   grid-template-columns: 200px 200px 200px 200px 200px 200px;
   grid-column-gap: 20px;
@@ -75,7 +75,7 @@ $social-icons-background-color: {{
   }
 }
 
-&__screenshot {
+$__screenshot {
   width: 100%;
   border-radius: 16px;
   box-shadow: 0 12px 48px rgba(17,16,62,0.12);
@@ -89,7 +89,7 @@ $social-icons-background-color: {{
   }
 }
 
-&__screenshots-wrapper {
+$__screenshots-wrapper {
   overflow-y: auto;
 }
 @import
