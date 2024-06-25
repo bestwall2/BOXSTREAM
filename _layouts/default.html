@@ -71,6 +71,20 @@
         {% include footer.html %}
         {% include appstoreimages.html %}
       </div>
+      <section class="app__screenshots app__section">
+        <div class="container">
+          <h2 class="app__section-title">Screenshots</h2>
+        </div>
+        <div class="app__screenshots-wrapper container-desktop">
+          <div class="app__screenshots-list">
+            {% for screenshot in site.screenshots %}
+            <a href="./assets/screenshot/{{ screenshot }}" class="lightbox">
+              <img src="./assets/screenshot/{{ screenshot }}" class="app__screenshot">
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </body>
