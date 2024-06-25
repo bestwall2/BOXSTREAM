@@ -9,9 +9,6 @@ button {
     position: relative;
     background: #100720;
     transition: 0.1s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 0;
 }
 
