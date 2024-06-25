@@ -1,26 +1,37 @@
 <div class="features">
+  <section class="app__screenshots app__section">
 
-    {% for feature in site.features %}
-
-    {% if feature.title %}
-    <div class="feature">
-        <div>
-            <span class="fa-stack fa-1x">
-                <i class="iconBack fas fa-circle fa-stack-2x"></i>
-                <i class="iconTop fas fa-{{ feature.fontawesome_icon_name }} fa-stack-1x"></i>
-            </span>
-        </div>
-        <div class="featureText">
-            <h3>
-                {{ feature.title }}
-            </h3>
-            <p>
-                {{ feature.description }}
-            </p>
-        </div>
+    <div class="app__screenshots-wrapper container-desktop">
+      <div class="app__screenshots-list">
+        {% for screenshot in site.screenshots %}
+        <a href="./assets/screenshot/{{ screenshot }}" class="lightbox">
+          <img src="./assets/screenshot/{{ screenshot }}" class="app__screenshot">
+        </a>
+        {% endfor %}
+      </div>
     </div>
-    {% endif %}
+  </section>
+  {% for feature in site.features %}
 
-    {% endfor %}
+  {% if feature.title %}
+  <div class="feature">
+    <div>
+      <span class="fa-stack fa-1x">
+        <i class="iconBack fas fa-circle fa-stack-2x"></i>
+        <i class="iconTop fas fa-{{ feature.fontawesome_icon_name }} fa-stack-1x"></i>
+      </span>
+    </div>
+    <div class="featureText">
+      <h3>
+        {{ feature.title }}
+      </h3>
+      <p>
+        {{ feature.description }}
+      </p>
+    </div>
+  </div>
+  {% endif %}
+
+  {% endfor %}
 
 </div>
