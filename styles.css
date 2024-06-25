@@ -234,10 +234,10 @@ a {
     object-fit: contain;
 }
 .button-icon2 {
-    width: 23px; /* Adjust as needed */
-    height: 23px; /* Adjust as needed */
+    width: 24px; /* Adjust as needed */
+    height: 24px; /* Adjust as needed */
     margin-right: 2px;
-    margin-left: 3px;/* Adjust as needed */
+    margin-left: 4px;/* Adjust as needed */
     vertical-align: middle;
     display: inline-block;
     object-fit: contain;
