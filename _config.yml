@@ -13,7 +13,7 @@ presskit_download_link                    :                                     
 app_icon                                  : assets/AppLogo.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : Box Stream                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 : Free & Enjoy                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Best Application for watching movies on Android
+app_description                           : Best Free Application for watching movies & Series on Android devices.
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
