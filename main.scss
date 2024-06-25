@@ -35,7 +35,7 @@ $social-icons-background-color: {{ site.social_icons_background_color }};
     grid-column-gap: 20px;
     padding: 30px 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 268px) {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       padding: 32px;
     }
@@ -46,11 +46,11 @@ $social-icons-background-color: {{ site.social_icons_background_color }};
   }
 
   &-screenshot {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
+    width: 200;
+    height: 280;
+    max-height: 280px;
     object-fit: cover;
-    border-radius: 16px;
+    border-radius: 20px;
     box-shadow: 0 12px 48px rgba(17, 16, 62, 0.12);
     transition: all .3s ease-in-out;
     transform: scale(1);
