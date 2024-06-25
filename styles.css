@@ -226,9 +226,9 @@ a {
 }
 
 .button-icon {
-    width: 45px; /* Adjust as needed */
-    height: 45px; /* Adjust as needed */
-    margin-right: 8px; /* Adjust as needed */
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    margin-right: 4px; /* Adjust as needed */
     vertical-align: middle;
     display: inline-block;
     object-fit: contain;
