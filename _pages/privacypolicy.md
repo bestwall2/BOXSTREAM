@@ -3,7 +3,7 @@ layout: page
 title: Privacy Policy
 include_in_header: false
 ---
-
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 **Last updated :**  
 June 24 2024
 
