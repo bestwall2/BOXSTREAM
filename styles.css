@@ -259,12 +259,12 @@ a {
 }
 
 .app__screenshots-list {
-  max-width: 1200px;
+  max-width: 200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-auto-rows: 0.2fr;
-  grid-gap: 10px;
+  grid-gap: 5px;
 }
 
 .app__screenshot {
