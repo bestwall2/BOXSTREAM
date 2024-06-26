@@ -259,7 +259,7 @@ a {
 }
 
 .app__screenshots-list {
-  max-width: 600px;
+  max-width: 550px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -269,7 +269,7 @@ a {
 
 .app__screenshot {
   height: 100%;
-  width: 200px; /* Fixed width for desktop */
+  width: 150px; /* Fixed width for desktop */
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
