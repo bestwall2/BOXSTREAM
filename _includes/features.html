@@ -1,6 +1,5 @@
-<div class="features">
-  <div class="container_mobile">
-      <section class="app__screenshots app__section">
+<div class="container_mobile">
+  <section class="app__screenshots app__section">
     <div class="app__screenshots-wrapper container-desktop">
       <div class="app__screenshots-list">
         {% for screenshot in site.screenshots %}
@@ -11,7 +10,9 @@
       </div>
     </div>
   </section>
-  </div>
+</div>
+<div class="features">
+
   {% for feature in site.features %}
 
   {% if feature.title %}
