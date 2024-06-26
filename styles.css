@@ -269,7 +269,7 @@ a {
 
 .app__screenshot {
   height: 100%;
-  width: 130px; /* Fixed width for desktop */
+  width: 100px; /* Fixed width for desktop */
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
