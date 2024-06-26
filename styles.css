@@ -259,7 +259,7 @@ a {
 }
 
 .app__screenshots-list {
-  max-width: 300px;
+  max-width: 340px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
