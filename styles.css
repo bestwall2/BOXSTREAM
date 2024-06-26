@@ -290,8 +290,8 @@ a {
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     .app__screenshots-wrapper {
-        padding: 32px;
-        width: 800px;
+        padding: 0px;
+        width: 480px;
     }
 
     .app__screenshot {
