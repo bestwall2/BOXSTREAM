@@ -249,6 +249,8 @@ a {
 
 /* Front matter comment to ensure Jekyll properly reads file. */
 
+/* Default styles for all devices */
+
 .app__screenshots-wrapper {
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -269,7 +271,7 @@ a {
 
 .app__screenshot {
   height: 100%;
-  width: 150px; /* Fixed width for desktop */
+  width: 150px; /* Default width */
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -285,6 +287,23 @@ a {
 
 .app__screenshot:not(:hover) {
   transition: transform 0.5s, box-shadow 0.5s;
+}
+
+/* Styles for devices with a width of 768px or more (typically desktops) */
+@media (min-width: 768px) {
+  .app__screenshots-list {
+    max-width: 600px; /* Larger width for desktop */
+    gap: 10px; /* Increased gap */
+  }
+
+  .app__screenshot {
+    width: 200px; /* Larger width for desktop */
+    border-radius: 8px; /* Different border radius */
+  }
+
+  .app__screenshot:hover {
+    transform: scale(1.1); /* Larger scale on hover */
+  }
 }
 
 /* Media Query for Mobile Devices */
