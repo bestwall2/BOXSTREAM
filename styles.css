@@ -250,10 +250,12 @@ a {
 /* Front matter comment to ensure Jekyll properly reads file. */
 
 .app__screenshots-wrapper {
-    display: flex;
+    display: grid;
     justify-content: center; /* Center horizontally */
     overflow-x: auto;
+    grid-template-columns: auto;
     white-space: nowrap;
+    grid-column-gap: 10px;
     padding: 0; /* Remove top and bottom padding */
     margin: 0; /* Remove any margin */
 }
