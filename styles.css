@@ -250,56 +250,53 @@ a {
 /* Front matter comment to ensure Jekyll properly reads file. */
 
 .app__screenshots-wrapper {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 0; /* Remove top and bottom padding */
-    margin: 0; /* Remove any margin */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0; /* Remove top and bottom padding */
+  margin: 0; /* Remove any margin */
 }
 
 .app__screenshots-list {
-    display: gird;
-    grid-template-columns: 200px 200px 200px 200px 200px 200px;
-    grid-column-gap: 20px;
-    padding: 30px 0;
+  display: flex;
+  gap: 20px; /* Set the gap between images */
+  padding: 30px 0;
 }
 
 .app__screenshot {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    transform: scale(1);
-    cursor: pointer;
+  height: 100%;
+  width: 200px; /* Fixed width for desktop */
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+  cursor: pointer;
 }
 
 .app__screenshot:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
 }
 
 .app__screenshot:not(:hover) {
-    transition:
-        transform 0.5s,
-        box-shadow 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s;
 }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
-    .app__screenshots-wrapper {
-        padding: 0px;
-        width: 400px;
-    }
+  .app__screenshots-wrapper {
+    justify-content: flex-start; /* Align items to the start */
+    padding: 0 10px; /* Add padding for horizontal scroll */
+  }
 
-    .app__screenshot {
-        width: 200px; /* Smaller width for mobile devices */
-    }
+  .app__screenshot {
+    width: calc(100vw - 40px); /* Make each screenshot fit within the viewport minus padding */
+  }
 }
 
 .container-desktop {
-    margin: 20; /* Remove margin from the container */
-    padding: 0; /* Remove padding from the container */
+  margin: 0; /* Remove margin from the container */
+  padding: 0; /* Remove padding from the container */
 }
