@@ -292,7 +292,7 @@ a {
 /* Styles for devices with a width of 768px or more (typically desktops) */
 @media (min-width: 768px) {
   .app__screenshots-list {
-    max-width: auto; /* Larger width for desktop */
+    max-width: 768px; /* Larger width for desktop */
     gap: 10px; /* Increased gap */
   }
 
