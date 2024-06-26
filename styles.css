@@ -292,12 +292,12 @@ a {
 /* Styles for devices with a width of 768px or more (typically desktops) */
 @media (min-width: 768px) {
   .app__screenshots-list {
-    max-width: 600px; /* Larger width for desktop */
+    max-width: 1200px; /* Larger width for desktop */
     gap: 10px; /* Increased gap */
   }
 
   .app__screenshot {
-    width: 200px; /* Larger width for desktop */
+    width: 400px; /* Larger width for desktop */
     border-radius: 8px; /* Different border radius */
   }
 
