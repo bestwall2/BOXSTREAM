@@ -250,26 +250,24 @@ a {
 /* Front matter comment to ensure Jekyll properly reads file. */
 
 .app__screenshots-wrapper {
-    display: grid;
+    display: flex;
     justify-content: center; /* Center horizontally */
     overflow-x: auto;
-    grid-template-columns: auto;
     white-space: nowrap;
-    grid-column-gap: 10px;
     padding: 0; /* Remove top and bottom padding */
     margin: 0; /* Remove any margin */
 }
 
 .app__screenshots-list {
-    display: inline-flex;
+    display: gird;
     grid-template-columns: 200px 200px 200px 200px 200px 200px;
     grid-column-gap: 20px;
     padding: 30px 0;
 }
 
 .app__screenshot {
-    width: 300px;
-    height: auto;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
