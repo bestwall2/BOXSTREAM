@@ -291,7 +291,7 @@ a {
 @media (max-width: 768px) {
     .app__screenshots-wrapper {
         padding: 0px;
-        width: 480px;
+        width: 400px;
     }
 
     .app__screenshot {
