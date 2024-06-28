@@ -44,15 +44,7 @@ button:active {
     font-size: 16px;
 }
 
-.small-text {
-    font-size: 12px;
-    margin-left: 5px;
-    display: inline-flex; /* Use flexbox */
-    align-items: center; /* Vertically center items */
-    justify-content: center; /* Horizontally center items */
-    outline: 0;
-    /* Adjust space between texts */
-}
+
 
 a {
     text-decoration: none;
@@ -178,28 +170,29 @@ a {
     }
 }
 
+.small-text {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
 .newBtn {
-    display: inline-flex; /* Use flexbox */
-    align-items: center; /* Vertically center items */
-    justify-content: center; /* Horizontally center items */
-    outline: 0;
+    display: inline-flex;
+    align-items: center;
     cursor: pointer;
     border: none;
     margin-top: 10px;
-    padding: 0 0px;
-    width: auto;
-    height: auto;
-    line-height: auto;
+    padding: 10px 20px;
     border-radius: 7px;
     background-color: #0070f3;
     color: white;
     font-weight: 400;
     font-size: 16px;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
-    transition:
-        background 0.2s ease,
-        color 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.newBtn .button-icon {
+    margin-right: 10px;
 }
 
 .newBtn:hover {
