@@ -180,6 +180,7 @@ a {
     align-items: center;
     cursor: pointer;
     border: none;
+    height: 45px;
     margin-top: 10px;
     padding: 10px 20px;
     border-radius: 7px;
