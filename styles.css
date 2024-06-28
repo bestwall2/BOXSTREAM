@@ -190,7 +190,7 @@ a {
     font-weight: 400;
     font-size: 16px;
     background: #0070f3;
-    color: #696969;
+    color: #fff;
     box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
     transition:
         background 0.2s ease,
@@ -237,6 +237,7 @@ a {
     height: 20px; /* Adjust as needed */
     margin-right: 4px; /* Adjust as needed */
     vertical-align: middle;
+    margin-left: 4px;
     display: inline-block;
     object-fit: contain;
 }
