@@ -46,7 +46,12 @@ button:active {
 
 .small-text {
     font-size: 12px;
-    margin-left: 5px; /* Adjust space between texts */
+    margin-left: 5px;
+    display: inline-flex; /* Use flexbox */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    outline: 0;
+    /* Adjust space between texts */
 }
 
 a {
