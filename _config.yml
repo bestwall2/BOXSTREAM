@@ -2,9 +2,9 @@
 page_title                                : BoxStream   
 # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 screenshots:
-  - yourscreenshot.png
-  - yourscreenshot.png
-  - yourscreenshot.png
+  - s_1.jpg
+  - s_2.jpg
+  - s_3.jpg
 # App Info
 ios_app_id                                :                                 # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country                           :                                         # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
