@@ -184,7 +184,7 @@ a {
     padding: 0 0px;
     height: auto;
     width: auto;
-    line-height: 45px;
+    line-height: auto;
     border-radius: 7px;
     background-color: #0070f3;
     color: white;
