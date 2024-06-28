@@ -44,8 +44,6 @@ button:active {
     font-size: 16px;
 }
 
-
-
 a {
     text-decoration: none;
 }
@@ -176,29 +174,29 @@ a {
 }
 
 .newBtn {
-    display: inline-flex;
-    align-items: center;
+    display: inline-flex; /* Use flexbox */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    outline: 0;
     cursor: pointer;
     border: none;
-    height: 45px;
     margin-top: 10px;
-    padding: 10px 20px;
+    padding: 0 0px;
+    width: auto;
+    height: 45px;
+    line-height: 45px;
     border-radius: 7px;
-    background-color: #0070f3;
-    color: white;
     font-weight: 400;
     font-size: 16px;
-    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
-    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+    color: #696969;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
-.newBtn .button-icon {
-    margin-right: 10px;
-}
-
-.newBtn .button-icon2 {
-    margin-right: 10px;
-}
 .newBtn:hover {
     background: rgba(0, 118, 255, 0.9);
     box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
@@ -256,66 +254,66 @@ a {
 /* Default styles for all devices */
 
 .app__screenshots-wrapper {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 0; /* Remove top and bottom padding */
-  margin: 0; /* Remove any margin */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0; /* Remove top and bottom padding */
+    margin: 0; /* Remove any margin */
 }
 
 .app__screenshots-list {
-  max-width: 340px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: auto;
-  gap: 5px;
+    max-width: 340px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 5px;
 }
 
 .app__screenshot {
-  height: 100%;
-  width: 150px; /* Default width */
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-  transform: scale(1);
-  cursor: pointer;
+    height: 100%;
+    width: 150px; /* Default width */
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
 }
 
 .app__screenshot:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
 .app__screenshot:not(:hover) {
-  transition: transform 0.5s, box-shadow 0.5s;
+    transition:
+        transform 0.5s,
+        box-shadow 0.5s;
 }
 
 /* Styles for devices with a width of 768px or more (typically desktops) */
 @media (min-width: 768px) {
-  .app__screenshots-list {
-    margin: 8px;
-    max-width: 900px; /* Larger width for desktop */
-    gap: 10px; /* Increased gap */
-  }
+    .app__screenshots-list {
+        margin: 8px;
+        max-width: 900px; /* Larger width for desktop */
+        gap: 10px; /* Increased gap */
+    }
 
-  .app__screenshot {
-    width: 400px; /* Larger width for desktop */
-    border-radius: 16px; /* Different border radius */
-  }
+    .app__screenshot {
+        width: 400px; /* Larger width for desktop */
+        border-radius: 16px; /* Different border radius */
+    }
 
-  .app__screenshot:hover {
-    transform: scale(1.1); /* Larger scale on hover */
-  }
+    .app__screenshot:hover {
+        transform: scale(1.1); /* Larger scale on hover */
+    }
 }
 
 /* Media Query for Mobile Devices */
 
-
-
 .container-desktop {
-  margin: 0; /* Remove margin from the container */
-  padding: 0; /* Remove padding from the container */
+    margin: 0; /* Remove margin from the container */
+    padding: 0; /* Remove padding from the container */
 }
