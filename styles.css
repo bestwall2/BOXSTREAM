@@ -182,8 +182,8 @@ a {
     border: none;
     margin-top: 10px;
     padding: 0 0px;
-    height: 55px;
-    line-height: 55px;
+    height: 60px;
+    line-height: 60px;
     border-radius: 7px;
     background-color: #0070f3;
     color: white;
@@ -210,8 +210,8 @@ a {
     border: none;
     margin-top: 10px;
     padding: 0 0px;
-    height: 45px;
-    line-height: 45px;
+    height: 60px;
+    line-height: 60px;
     border-radius: 7px;
     font-weight: 400;
     font-size: 16px;
@@ -293,7 +293,7 @@ a {
 @media (min-width: 768px) {
   .app__screenshots-list {
     margin: 8px;
-    max-width: 1000px; /* Larger width for desktop */
+    max-width: 900px; /* Larger width for desktop */
     gap: 10px; /* Increased gap */
   }
 
