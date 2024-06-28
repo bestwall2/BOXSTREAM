@@ -183,6 +183,7 @@ a {
     margin-top: 10px;
     padding: 0 0px;
     height: 45px;
+    width: auto;
     line-height: 45px;
     border-radius: 7px;
     background-color: #0070f3;
