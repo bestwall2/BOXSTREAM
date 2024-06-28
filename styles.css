@@ -182,9 +182,8 @@ a {
     border: none;
     margin-top: 10px;
     padding: 0 0px;
-    height: auto;
-    width: auto;
-    line-height: auto;
+    height: 55px;
+    line-height: 55px;
     border-radius: 7px;
     background-color: #0070f3;
     color: white;
