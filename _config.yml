@@ -9,6 +9,7 @@ screenshots:
 ios_app_id                                :                                 # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country                           :                                         # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 google_site_verification                  : google-site-verification=5b4GUJ6ccx44_SfGPungjY0hx1Pm6Jfb0f-ECtAZQEY
+enable_google_verification: true
 app_downloadUrl                           : https://www.mediafire.com/file/xuwdkymdb8jx0f7/BoxStream_1.0.apk/file
 player_downloadUrl                        : https://www.mediafire.com/file/ezdas8h3vkjcyk7/Player_Box_1.0.apk/file
 appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
