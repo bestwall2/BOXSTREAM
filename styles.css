@@ -173,7 +173,16 @@ a {
     margin-left: 5px;
     margin-right: 5px;
 }
-
+.info-text {
+  font-size: 15px ;
+  margin: 8px;
+  color: #fff;
+}
+.new-text {
+  margin-right: 8px;
+  margin-left: 8px;
+  font-style: bold;
+}
 .newBtn {
     display: inline-flex; /* Use flexbox */
     align-items: center; /* Vertically center items */
