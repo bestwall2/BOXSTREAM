@@ -174,14 +174,15 @@ a {
     margin-right: 5px;
 }
 .info-text {
-  font-size: 15px ;
-  margin: 8px;
+  font-size: 19px ;
+  margin: 10px;
   color: #fff;
 }
 .new-text {
   margin-right: 8px;
   margin-left: 8px;
-  font-style: bold;
+  font-size: 16px;
+  font-weight: bold;
 }
 .webappbtn {
     display: inline-flex; /* Use flexbox */
