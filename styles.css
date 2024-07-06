@@ -183,6 +183,29 @@ a {
   margin-left: 8px;
   font-style: bold;
 }
+.webappbtn {
+    display: inline-flex; /* Use flexbox */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    padding: 0 0px;
+    width: auto;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        box-shadow 0.2s ease;
+}
 .newBtn {
     display: inline-flex; /* Use flexbox */
     align-items: center; /* Vertically center items */
